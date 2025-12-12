@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея рецептів</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+    <h1 class="logo">Задоволення від кожного шматочка</h1>
+    <p class="subtitle">Галерея улюблених кондитерських рецептів</p>
+</header>
+
+<main class="main">
+
+<input type="radio" name="category" id="filter-all" class="filter-input" checked>
+<input type="radio" name="category" id="filter-cakes" class="filter-input">
+<input type="radio" name="category" id="filter-cookies" class="filter-input">
+<input type="radio" name="category" id="filter-cupcakes" class="filter-input">
+<input type="radio" name="category" id="filter-tarts" class="filter-input">
+
+<section class="filters">
+    <div class="filters__block filters__block--category">
+        <h2 class="filters__title">Фільтр за видами виробів</h2>
+        <div class="category-buttons">
+            <label class="category-button" for="filter-all">Усі</label>
+            <label class="category-button" for="filter-cakes">Торти</label>
+            <label class="category-button" for="filter-cookies">Печиво</label>
+            <label class="category-button" for="filter-cupcakes">Капкейки</label>
+            <label class="category-button" for="filter-tarts">Тарти</label>
+        </div>
+    </div>
+
+    <div class="filters__block filters__block--calories">
+        <h2 class="filters__title">Фільтр за калорійністю</h2>
+        <label class="calories-label"><span>До 300 ккал</span><input type="checkbox" disabled></label>
+        <label class="calories-label"><span>300–500 ккал</span><input type="checkbox" disabled></label>
+        <label class="calories-label"><span>Понад 500 ккал</span><input type="checkbox" disabled></label>
+    </div>
+</section>
+
+<section class="gallery">
+
+<article class="card cake">
+    <img src="Ведмедик (1).jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Ведмедик</h3>
+        <p class="card__text">гыгыыггыгыгыгыыгыгыггыгыгыг</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: торт</p>
+        <p>Ккал: 420</p>
+        <p>Час: 1 год 20 хв</p>
+    </div>
+</article>
+
+<article class="card cake">
+    <img src="Живі квіти.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Живі квіти</h3>
+        <p class="card__text">мммммммммм</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: торт</p>
+        <p>Ккал: 380</p>
+        <p>Час: 1 год</p>
+    </div>
+</article>
+
+<article class="card cookies">
+    <img src="Лимонне з маком.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Лимонне з маком</h3>
+        <p class="card__text">піде</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: печиво</p>
+        <p>Ккал: 290</p>
+        <p>Час: 35 хв</p>
+    </div>
+</article>
+
+<article class="card cookies">
+    <img src="Мафін.webp" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Мафін</h3>
+        <p class="card__text">З родзинками</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: печиво</p>
+        <p>Ккал: 260</p>
+        <p>Час: 30 хв</p>
+    </div>
+</article>
+
+<article class="card cupcakes">
+    <img src="Пиріг Свято у бабусі.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Пиріг Свято у бабусі</h3>
+        <p class="card__text">Найулюбленіше</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: капкейки</p>
+        <p>Ккал: 320</p>
+        <p>Час: 45 хв</p>
+    </div>
+</article>
+
+<article class="card cupcakes">
+    <img src="Святковий рулет.avif" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Святковий рулет</h3>
+        <p class="card__text">Під свято саме те що треба</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: капкейки</p>
+        <p>Ккал: 350</p>
+        <p>Час: 50 хв</p>
+    </div>
+</article>
+
+<article class="card tarts">
+    <img src="Сирники Три ягоди.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Сирники Три ягоди</h3>
+        <p class="card__text">ну кайф чо сказати
+        </p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: тарт</p>
+        <p>Ккал: 410</p>
+        <p>Час: 1 год</p>
+    </div>
+</article>
+
+<article class="card tarts">
+    <img src="Смачний торт.jpg" class="card__image">
+    <div class="card__content">
+        <h3 class="card__title">Смачний торт</h3>
+        <p class="card__text">Смачний</p>
+    </div>
+    <div class="card__divider"></div>
+    <div class="card__meta">
+        <p>Категорія: тарт</p>
+        <p>Ккал: 390</p>
+        <p>Час: 55 хв</p>
+    </div>
+</article>
+
+</section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="footer-logo">Смачні рецепти · 2025</p>
+        <p class="footer-text">Колекція домашніх рецептів.</p>
+        <nav class="footer-nav">
+            <a href="#">Про автора</a>
+            <a href="#">Рецепти</a>
+            <a href="#">Контакти</a>
+        </nav>
+    </div>
+</footer>
+
+</div>
+</body>
+</html>
